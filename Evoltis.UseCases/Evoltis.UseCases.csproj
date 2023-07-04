@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Evoltis.UseCasesPort\Evoltis.UseCasesPort.csproj" />
+    <ProjectReference Include="..\Evoltis.Entities\Evoltis.Entities.csproj" />
+    <ProjectReference Include="..\Evoltis.DTOs\Evoltis.DTOs.csproj" />
+    <ProjectReference Include="..\Evoltis.Middleware\Evoltis.Middleware.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Mapper\" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mapper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+</Project>
